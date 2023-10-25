@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import AppLayout from "../layouts/app-layout";
 import HomeLayout from "../layouts/home-layout";
-import BlogDetails from "../components/pages/blog-details";
-import BlogListing from "../components/pages/blog-listing";
-import NotFoundPage from "../components/pages/404";
+import BlogDetails from "../pages/blog-details";
+import BlogListing from "../pages/blog-listing";
+import NotFoundPage from "../pages/404";
 
 const AppRoutes = () => {
   return (

@@ -1,8 +1,11 @@
+import AppRoutes from "./routes/app-routes";
+import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
   return (
-    <div>
-      <p role="heading">Hello there</p>
-    </div>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
 }
 

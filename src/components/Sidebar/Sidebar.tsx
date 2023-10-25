@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+
 type SidebarProps = {
   items: Array<{ label: string; href: string }>;
 };
 
 const Sidebar = ({ items }: SidebarProps) => {
   return (
-    <div>
+    <div style={{ display: "flex", gap: 10 }}>
       {items.map((item) => (
-        <a role="navigation" key={item.label} href={item.href}>
+        <Link role="navigation" key={item.label} to={item.href}>
           {item.label}
-        </a>
+        </Link>
       ))}
     </div>
   );

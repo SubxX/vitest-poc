@@ -3,6 +3,7 @@ import AppLayout from "../layouts/app-layout";
 import HomeLayout from "../layouts/home-layout";
 import BlogDetails from "../components/pages/blog-details";
 import BlogListing from "../components/pages/blog-listing";
+import NotFoundPage from "../components/pages/404";
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,8 @@ const AppRoutes = () => {
         <Route path="profile" element={<p>Profile</p>} />
         <Route path="settings" element={<p>Settings</p>} />
       </Route>
+
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };
